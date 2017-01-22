@@ -1,204 +1,196 @@
 
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>freezer9.io</title>
-    <style type = "text/css">
+<head>
+	<title>freezer9.github.io</title>
+	<style type="text/css">
 
-    html{
-      margin:0px auto;
-    }
+	body{
 
-    body{
-        margin : 0px auto;
-        background-color: #fff;
-        padding: 0px;
+		margin: 0px auto;
+		width:800px;
 
-    }
+	}
+		
+	#wrapper-id{
+		margin: 0px;
+		width:800px;
+		height:600px;
+		background-color: #f9f9f9;
+		position: absolute;
+		top: 100px;
+		box-shadow: 2px 2px 10px #333;
+		transform: rotate(0deg);
+	}
 
-    h1{
-      transition: 0.2s;
-      font-family: fantasy;
-      font-style: normal;
-      font-weight: lighter;
-      font-size: 24px;
-      color:#333;
-      cursor: alias;
+	#image-container{
+		width:100%;
+		height: 200px;
+		background-color: #333;
+		background-image: url('http://www.paulreiffer.com/wp-content/uploads/2012/01/Paul_Reiffer_Photographer_San_Francisco_Golden_Gate_Bridge_Sunrise.jpg');
+		background-size: 100%;
+		background-position: 40% 80%;
+	}
 
-    }
-
-    h1:hover{
-      transition: 0.2s;
-      color:limegreen;
-      cursor: alias;
-
-    }
-
-    h2{
-      width: auto;
-      padding: 10px;
-      background-color: black;
-      font-family: fantasy;
-      font-style: normal;
-      font-weight: lighter;
-      font-size: 18px;
-      color:#fff;
-    }
-
-    .main-contianer{
-      margin: 0px auto;
-      background-color:#fff;
-      width : 100%;
-      height: 100%;
-
-    }
-
-    .cover-image{
-      // cover image
-      margin: 0px auto;
-      width: 100%;
-      height:400px;
-      background-color: limegreen;
-      background-image: url('lap.jpeg');
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: top;
-    }
-
-    .Intro-container{
-      padding:10px;
-    }
-
-    .fixed-top-nav{
-      postion:fixed;
-      width: 100%;
-      height: 70px;
-      background-color: #333;
-      opacity: 0.9;
-      padding-top: 10px ;
-    }
+	#person-image{
+		margin:30px;
+		width: 150px;
+		height: 150px;
+		position: absolute;
+		top: 80px;
+		background-color: #fff;
+		border:3px solid #1a4fa5;
+		border-radius: 100%;
+		background-image: url('images/mypic.jpg');
+		background-size: 100%;
+		background-position: 50% 60%;
+		background-repeat: no-repeat;
+	}
 
 
-    .Name-button{
-        transition: 0.2s;
-        background-color: #333;
-        width: 150px;
-        height: 50px;
-        border:0px;
-        font-family: fantasy;
-        font-style: normal;;
-        font-weight: lighter;
-        font-size: 18px;
-        color:limegreen;
-        cursor: hand;
-        padding: 10px;
-        position:sticky;
-        left: 25px;
-    }
+	#CheckProjects{
+		margin: 100px;
+		padding: 0px;
+		width:130px;
+		height: 55px;
+		border:2px solid #333;
+		background-color: #fff;
+		cursor: pointer;
+		position: absolute;
+		top : 400px;
+		left:530px;
 
-    .Name-button:hover{
-        transition: 0.2s;
-        border:2px solid;
-        border-color: limegreen;
-        border-radius: 40px;
-    }
+	}
 
-    .Cool-button{
-      transition: 0.5s;
-      font-family: fantasy;
-      font-style: normal;
-      font-weight: lighter;
-      font-size: 20px;
-      width: 250px;
-      height: 60px;
-      background-color: #fff;
-      transform: rotate(0deg);
-      color:black;
-      border: 2px solid black
+	#CheckProjects:hover{
+	
+		border:2px solid black;
+		background-color: black;
+		color: #fff;
 
-    }
+	}
 
-    .Cool-button:hover{
-      width: 250px;
-      transition: 0.5s;
-      transform: rotate(0deg);
-      border-color: #fff;
-      background-color: black;
-      color:limegreen;
-    }
+	#info-cont{
+		width:500px;
+		height: auto;
+		padding: 20px;
+		background-color: #f9f9f9;
+		position: absolute;
+		margin: 10px;
+		left: 200px;
 
-    .About-me-cont{
-      margin:0px auto;
-      width: 80%;
-      height: auto;
-      background-color: #fff;
-      font-family: fantasy;
-      font-weight: 100;
-      font-size: 20px;
-      color: #333;
-      padding:20px 10px 20px 10px;
-      border-top: 2px solid black;
-      border-bottom: 2px solid black;
+	}
 
-    }
+	#para-font{
+		font-family: Laksaman,tahoma;
+		font-size: 14px;
+		color:#333;
+		font-weight: 100;
+	}
 
-    .Button-cont{
-      margin:0px auto;
-      width: 80%;
+	#Personal-info{
+		margin: 5px;
+		width: 200px;
+		height:210px;
+		background-color: #f9f9f9;
+		font-family: arial;
+		color: #333;
+		position: absolute;
+		top: 280px;
+	}
 
-    }
+	#NameStyle{
+		font-family: arial;
+		font-weight: 900;
+		color:#333;
+		font-size: 20px;
+		margin:10px;
+	}
 
-    .rotate-on-hover{
-      transition: 0.5s;
-      transform: rotate(0deg);
-    }
+	#infoStyle{
+		font-family: arial;
+		font-weight: 800;
+		color: #333;
+		font-size: 14px;
+		margin: 10px;
+	}
 
-    .rotate-on-hover:hover{
-      transition: 0.5s;
-      transform: rotateX(180deg);
-    }
+	#justALine{
+		background-color: royalblue;
+		width:100%;
+		height:2px;
+	}
 
-    .footer{
-      width:100%;
-      height:100px;
-      background-color: #333;
-      position: absolute;
-      bottom:auto;
-    }
+	#JobStats{
+		color: #333;
+		font-family: Laksaman;
+		font-size: 24px;
+		text-align: center;
+	}
 
-    .Nice-text{
-      font-family: sans-serif;
-      font-weight: 300;
-      font-style: normal;
-      color:black;
-    }
+	#TestBox{
+		margin: 0px auto;
+		width: 100%;
+		height: 50px;
+		background-color: #fff;
+		position: absolute;
+		top:620px;
+	}
 
 
-    </style>
-  </head>
-  <body>
+	</style>
 
-    <div class="main-contianer">
-      <div class="cover-image">
-        <div class="fixed-top-nav">
-          <button class = "Name-button">freezer9.io</button>
-        </div>
-      </div>
-      <div class="Intro-container">
-        <h1><p align="center">Geek | Programmer | Designer | Artist | Ambivert</p></h1>
-      </div>
-      <div class="Button-cont">
-        <p align = "center"><button class="Cool-button">Stuff I built!</button></p>
-      </div>
-      <div class="About-me-cont">
-      <h2>Things I know about</h2>
-      <p class="Nice-text">San Francisco, in northern California, is a hilly city on the tip of a
-         peninsula surrounded by the Pacific Ocean and San Francisco Bay. It's
-         known for its year-round fog, iconic Golden Gate Bridge, cable cars and colorful
-          Victorian houses. The Financial District's Transamerica Pyramid is its most
-          distinctive skyscraper. In the bay sits Alcatraz Island, site of the notorious former prison.</p>
-      </div>
-    </div>
-    <!div class="footer"><!/div>
 
-  </body>
+
+<script type="text/javascript">
+	
+	function ShowHireMessage(){
+		var cash;
+		var text;
+		cash = document.getElementById("priceCont").value;
+		if(cash == '' || cash < 1000 || isNaN(cash)){
+			text = "Add some cash to hire me!";
+		}else{
+			
+			text = "<b>At your service!<b><br>";
+			
+		}
+
+		document.getElementById("JobStats").innerHTML = text;
+	} 
+
+
+</script>
+
+</head>
+<body>
+<p id = "JobStats">freezer9.github.io</p>
+<div id = "wrapper-id">
+	<div id="image-container"></div>
+	<div id="person-image"></div>
+	<div id="Price-container">
+		<a href="https://github.com/freezer9"><button name = "hireButton" id="CheckProjects" onclick=ShowHireMessage()>My Projects</button></a>
+	</div>
+	<div id="info-cont">
+		<p id="para-font">
+		Hey there! I'm Joel and I'm a Programmer. I have been programming since 2 years.
+		I like to build stuff, and I keep building things when I'm free I watch a lot of movies,
+		in the span of 1 year. I have watched 300 or more movies. That's too much for a person who wasn't interested 
+		in movies. Apart from programming I Can sketch and I like to go for a long walk with 
+		my friend. I even like songs, who doesn't? I listen to songs which takes me into my world.
+		I'm really interested in AI and machine learning. And I think these things will help us discover
+		new worlds.</p>
+	</div>
+	
+	<div id = "Personal-info">
+		<p id="NameStyle" align="center">I'm Joel Benjamin</p>
+		<p id="infoStyle" align="center">Age : 17</p>
+		<p id="infoStyle" align="center">Programmer</p>
+		<div id="justALine"></div>
+	</div>
+<div id="TestBox"></div>
+</div>
+
+
+</body>
 </html>
