@@ -1,1 +1,1 @@
-http://www.freezer9.github.io
+https://freezer9.github.io
