@@ -1,0 +1,59 @@
+body{
+
+		margin: 0px auto;
+		width:1000px;
+
+	}
+		
+#wrapper{
+		margin    : 0px;
+		width     :1000px;
+		height    :auto;
+		position  : absolute;
+		top       : 0px;
+		box-shadow: 0px 0px 0px #333;
+		transform : rotate(0deg);
+		background-color: #f9f9f9;
+	}
+
+
+#huge-container-box{
+	width         : 100%;
+	height        : 1000px;
+	position      : absolute;
+	top           : 50px;
+	box-shadow    : 2px 2px 20px  #333;
+	background    : #3dd; 
+}
+
+#top-image-box{
+	width         : 100%;
+	height        : 300px;
+	background    : #fff;
+	padding       : 25px 0px 25px 0px;  
+}
+
+#rotate-left, #rotate-right{
+	margin:0px;
+	transition: 0.5s;
+
+}
+#rotate-left:hover{
+	transition: 0.5s;
+	transform:rotate(20deg);
+}
+
+#rotate-right:hover{
+	transition: 0.5s;
+	transform:rotate(-20deg);
+}
+
+#footer-container-box{
+	width         : 100%;
+	height        : 100px;
+	background    : #333;
+	position      : absolute;
+	bottom        : 0px;           
+}
+
+
