@@ -1,59 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+
 body{
 
 		margin: 0px auto;
-		width:1000px;
+		width:100%;
 
 	}
 		
 #wrapper{
 		margin    : 0px;
-		width     :1000px;
+		width     :100%;
 		height    :auto;
-		position  : absolute;
-		top       : 0px;
 		box-shadow: 0px 0px 0px #333;
-		transform : rotate(0deg);
-		background-color: #f9f9f9;
+		background-color: #555;
 	}
 
 
+
 #huge-container-box{
+	margin-top    : 0px; 
 	width         : 100%;
 	height        : 1000px;
 	position      : absolute;
-	top           : 50px;
-	box-shadow    : 2px 2px 20px  #333;
-	background    : #3dd; 
+	background    : #fff; 
 }
 
-#top-image-box{
+#header-nav-bar{
+	margin-top    : 0px; 
 	width         : 100%;
-	height        : 300px;
-	background    : #fff;
-	padding       : 25px 0px 25px 0px;  
+	height        : 70px;
+	position      : relative;
+	top 		  : 0px;
+	background    : #000;    
 }
 
-#rotate-left, #rotate-right{
-	margin:0px;
-	transition: 0.5s;
+#header-font{
+	margin-top    : 0px; 
+    font-family: 'Julius Sans One', sans-serif;
+	font-size     : 20px;
+	color 		  : #fff;
+	padding-top   : 10px;
+	padding-right : 50px;
+	text-align    : right;  
 
 }
-#rotate-left:hover{
-	transition: 0.5s;
-	transform:rotate(20deg);
+
+#main-container{
+	width    		: 100%;
+	height   		: 60%;
+	background-image: url('images/sf.jpg');   
+	background-size : 100%;
 }
 
-#rotate-right:hover{
-	transition: 0.5s;
-	transform:rotate(-20deg);
+#other-container{
+	width  			: 100%;
+	height   		: 40%;
+	background      : #f9f9f9;
+
 }
 
-#footer-container-box{
-	width         : 100%;
-	height        : 100px;
-	background    : #333;
-	position      : absolute;
-	bottom        : 0px;           
+
+#tag-box{
+	width          : 300px;
+	height         : 300px;
+	background     : #fff;
+	float          : left;
+	padding        : 20px 20px 20px 20px;
+	margin-top     : 100px;
+	margin-left    : 100px; 
+	opacity        : 0.3;        	
 }
+
+#about-me{
+	width          : 400px;
+	height         : 400px;
+	background     : #fff;
+	float          : right;
+	padding        : 20px 20px 20px 20px;
+	margin-top     : 50px;
+	margin-right    : 100px;  
+}
+
+#about-text{
+	
+    font-family: 'Quattrocento Sans', sans-serif;
+	font-size      : 20px;
+	color          : #000; 
+}
+
+#github-btn{
+	width: 250px;
+	height: 70px;
+	border: 0px;
+	background: #000;
+	color :#fff; 
+	cursor: pointer;
+	font-size: 20px;
+    font-family: 'Julius Sans One', sans-serif;
+
+
+
+}
+
+
+#github-btn:hover{
+	background: #2aba36;
+	color      :#fff;
+}
+
+
 
 
