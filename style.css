@@ -53,9 +53,9 @@ h3{
 
 #header-font{
 	margin-top    : 0px; 
-    font-family: 'Julius Sans One', sans-serif;
+        font-family   : 'Julius Sans One', sans-serif;
 	font-size     : 20px;
-	color 		  : #fff;
+	color         : #fff;
 	padding-top   : 10px;
 	padding-right : 50px;
 	text-align    : right;  
@@ -119,7 +119,7 @@ h3{
 	width           : 70px;
 	height          : 70px;
 	border          : 0px;
-	background      : #fff;
+	background      : #fbfbfb;
 	background-image: url('icons/github.svg')
 	color           :#fff; 
 	cursor          : pointer;
@@ -130,7 +130,7 @@ h3{
 }
 
 #github-btn:hover{
-	background  	: #fbfbfb;
+	background  	: #1aed95;
 	color           :#fff;
 }
 
