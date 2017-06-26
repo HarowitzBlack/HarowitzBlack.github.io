@@ -124,7 +124,8 @@ h3{
 	color           :#fff; 
 	cursor          : pointer;
 	font-size       : 15px;
-    font-family     : 'Julius Sans One', sans-serif;
+        font-family     : 'Julius Sans One', sans-serif;
+	border-radius   : 100px;
 
 }
 
