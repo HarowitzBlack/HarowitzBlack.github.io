@@ -14,6 +14,7 @@ body{
 h1{
 	font-family: 'Ubuntu Condensed', sans-serif;
 	color      :#1aed95;
+	cursor     :pointer;
 }
 
 
@@ -22,6 +23,7 @@ h3{
 	font-family: 'Julius Sans One', sans-serif;
 	font-size  : 23px; 
 	color      :#1aed95;
+	cursor     :pointer;
 }
 		
 #wrapper{
@@ -53,9 +55,9 @@ h3{
 
 #header-font{
 	margin-top    : 0px; 
-        font-family   : 'Julius Sans One', sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
 	font-size     : 20px;
-	color         : #fff;
+	color 		  : #fff;
 	padding-top   : 10px;
 	padding-right : 50px;
 	text-align    : right;  
@@ -65,7 +67,7 @@ h3{
 #main-container{
 	width    		: 100%;
 	height   		: 100vh;
-	/*background-image: url('images/pat.jpg');   */
+	background-image: url('images/sf.jpg');   
 	background-size : cover;
 	background-attachment: fixed;
 }
@@ -116,28 +118,35 @@ h3{
 
 #github-btn{
 	transition      : 0.2s; 
-	width           : 70px;
-	height          : 70px;
+	width           : 50px;
+	height          : 50px;
 	border          : 0px;
 	background      : #fbfbfb;
 	background-image: url('icons/github.svg')
 	color           :#fff; 
 	cursor          : pointer;
 	font-size       : 15px;
-        font-family     : 'Julius Sans One', sans-serif;
+    font-family     : 'Julius Sans One', sans-serif;
 	border-radius   : 100px;
 
 }
 
 #github-btn:hover{
-	background  	: #1aed95;
-	color           :#fff;
+	color           : #fff;
 }
 
 #svg-github-icon{
-	width           : 50px;
+	background-color: #1aed95;
+	width           : 55px;
 	height          : 50px;
+	border          : none;
+	border-radius   : 100px; 
 }
 
-
-
+#svg-github-icon:hover{
+	margin          : 0px;
+	width           : 55px;
+	height          : 50px;
+	fill            : #1aed95;
+	border-radius   : 100px; 
+}
