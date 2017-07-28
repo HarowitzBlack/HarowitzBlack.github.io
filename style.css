@@ -4,149 +4,131 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300');
 
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
 body{
 
 		margin: 0px auto;
 		width:100%;
+		overflow-x: hidden;
 
 	}
 
 h1{
-	font-family: 'Ubuntu Condensed', sans-serif;
-	color      :#1aed95;
-	cursor     :pointer;
+	/*font-family: 'Indie Flower', cursive;*/
+	font-family: 'Amatic SC', cursive;
+	font-weight: 100;
+	font-size: 60px;
+	color      :#333;
 }
 
 
 h3{
-
-	font-family: 'Julius Sans One', sans-serif;
-	font-size  : 23px; 
-	color      :#1aed95;
-	cursor     :pointer;
+	font-family: 'Amatic SC', cursive;
+	font-size  : 30px;
+	font-weight: 300;
+	color      :#333;
 }
-		
-#wrapper{
-		margin    : 0px;
+
+p{
+	font-family: 'Amatic SC', cursive;
+	color: #333;
+	font-size: 23px;
+}
+
+.header-nav-bar{
+	width: 100%;
+	height: 30px;
+	background-color: #666;
+	position: fixed;
+	top: 0px;
+	background-image: url('images/pink.jpg');
+	background-size: cover;
+	background-origin: border-box;
+}
+
+.wrapper{
 		width     :100%;
-		height    :auto;
-		box-shadow: 0px 0px 0px #333;
-		background-color: #555;
-	}
-
-
-
-#huge-container-box{
-	margin-top    : 0px; 
-	width         : 100%;
-	height        : 100vh;
-	position      : absolute;
-	background    : #fbfbfb; 
+		height    :100%;
+		background-color: #f9f9f9;
 }
 
-#header-nav-bar{
-	margin-top    : 0px; 
-	width         : 100%;
-	height        : 70px;
-	position      : relative;
-	top 		  : 0px;
-	background    : #000;    
-}
-
-#header-font{
-	margin-top    : 0px; 
-    font-family: 'Julius Sans One', sans-serif;
-	font-size     : 20px;
-	color 		  : #fff;
-	padding-top   : 10px;
-	padding-right : 50px;
-	text-align    : right;  
+.cover{
+	width: 100%;
+	height: 450px;
+	background-color: #f9f9f9;
 
 }
 
-#main-container{
-	width    		: 100%;
-	height   		: 100vh;
-	background-image: url('images/sf.jpg');   
-	background-size : cover;
-	background-attachment: fixed;
+.coverbox-left{
+	word-break: normal;
+	margin-left: 30%;
+	width: 400px;
+	height: auto;
+	padding: 20px;
+	float: left;
+	background-color: inherit;
 }
 
-#other-container{
-	width  			: 100%;
-	height   		: 100vh;
-	background      : #18f489;
-	background-attachment: fixed;
-
-}
-
-#test-container{
-	width  			: 100%;
-	height   		: 100vh;
-	background      : #37a;
-	background-attachment: fixed;
+.cover-text{
 
 }
 
-
-#tag-box{
-	width          : 300px;
-	height         : 300px;
-	background     : #fff;
-	float          : left;
-	padding        : 20px 20px 20px 20px;
-	margin-top     : 100px;
-	margin-left    : 100px; 
-	opacity        : 0.3;        	
+.my-skills{
+	width: 100%;
+	height: auto;
 }
 
-#about-me{
-	width          : auto;
-	height         : auto;
-	background     : #fbfbfb;
-	float          : right;
-	padding        : 20px 20px 20px 20px;
-	margin-top     : 50px;
-	margin-right   : 100px;    
+.skill-box{
+	margin-left: 20%;
+	width: 700px;
+	height: auto;
+	padding: 30px;
+	background-color: #f9f9f9;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
-#about-text{
-    font-family: 'Ubuntu', sans-serif;
-	font-size      : 20px;
-	color          : #000; 
+.skill-item{
+	width: 100px;
+	height: 100px;
+	background-color: transparent;
+	margin-left: 10px;
+	margin-top: 20px;
+	margin-right: 10px;
+	background-size: contain;
 }
 
-#github-btn{
-	transition      : 0.2s; 
-	width           : 50px;
-	height          : 50px;
-	border          : 0px;
-	background      : #fbfbfb;
-	background-image: url('icons/github.svg')
-	color           :#fff; 
-	cursor          : pointer;
-	font-size       : 15px;
-    font-family     : 'Julius Sans One', sans-serif;
-	border-radius   : 100px;
+.image-size{
+	padding-top: 10px;
+	padding-left: 10px;
+	width: 70px;
+	height: 70px;
+	background-position: center;
+}
+
+.grad-container{
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(45deg,#7a42f4,#f44162,#f441ee);
+	animation: gradanim 10s ease infinite;
+}
+
+@keyframes gradanim {
+	0% {background-position:0% 57%;background: linear-gradient(45deg,#7a42f4,#f44162,#f441ee);}
+	25% {background-position:100% 67%;background: linear-gradient(90deg,#f44162,#f441ee,#7a42f4);}
+	50% {background-position:60% 40%;background: linear-gradient(135deg,#7a42f4,#f44162,#f441ee);}
+	75% {background-position:40% 80%;background: linear-gradient(90deg,#f44162,#f441ee,#7a42f4);}
+	100% {background-position:0% 57%;background: linear-gradient(45deg,#7a42f4,#f44162,#f441ee);}
 
 }
 
-#github-btn:hover{
-	color           : #fff;
-}
 
-#svg-github-icon{
-	background-color: #1aed95;
-	width           : 55px;
-	height          : 50px;
-	border          : none;
-	border-radius   : 100px; 
-}
 
-#svg-github-icon:hover{
-	margin          : 0px;
-	width           : 55px;
-	height          : 50px;
-	fill            : #1aed95;
-	border-radius   : 100px; 
+.footer{
+	width: 100%;
+	height: 30px;
+	background-color: #333;
 }
