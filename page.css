@@ -1,5 +1,7 @@
 
 
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
 body{
     margin: 0px;
     background-color: #f9f9f9;
@@ -8,7 +10,8 @@ body{
 }
 
 h1{
-    font-family: monospace;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 25px;
     color: #f9f9f9;
 }
 
@@ -87,4 +90,44 @@ h1{
 
 #stack p{
     text-align: center;
+}
+
+#middle-box{
+    margin: auto;
+    width: 600px;
+    height: 100%;
+}
+
+#my-img-frame{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    top:80px;
+    background-color: #16ba7b;
+    border-radius: 100%;
+    background-image: url("https://unsplash.it/200/300");
+
+}
+
+#desp{
+    width: 600px;
+    height: 100px;
+    position: relative;
+    top:90px;
+    display: flex;
+    flex-direction: row;
+}
+
+#desp p{
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 200px;
+    height: 15px;
+    font-weight:bolder;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    font-family: 'Oxygen', sans-serif;
+    color:#58dd92;
 }
