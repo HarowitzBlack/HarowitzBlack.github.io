@@ -1,90 +1,58 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <title>Joel Benjamin | Harowitz Black</title>
-    <link href = "page.css" rel = "stylesheet" type = "text/css">
-    <script src="https://use.fontawesome.com/1b427c10f3.js"></script>
-</head>
-<body>
-    <div id = "page_wrapper">
-        <div id = "first-cont">
-            <div id = "img-container">
-                <div id = "middle-box">
-                    <div id = "my-frame">
-                        <div id = "image-pattern"></div>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="page.css">
+        <script src="https://use.fontawesome.com/1b427c10f3.js"></script>
+    </head>
+    <body onload="blink()">
+        <div class="wrapper">
+            <div id="center-box">
+                <div id="greeting-cont" >
+                    <h1 id="greettext">HEY I'M JOEL!</h1>
+                </div>
 
-                        <div id="min-desp">
-                            <div id = "center-content">
-                                <p><i class="fa fa-laptop" aria-hidden="true"></i> I build Chatbots</p>
-                                <p><i class="fa fa-code" aria-hidden="true"></i> I build stuff for the Web</p>
-                                <p><i class="fa fa-gamepad" aria-hidden="true"></i> I play games</p>
-                            </div>
-                        </div>
+                <div id="about-box">
+                    <div id="img-header">
 
-                        <div id="min-desp">
-                            <div id = "center-content">
-                                <h1>About Me</h1>
+                    </div>
+                    <div id="about-me">
+                        <p>
+                            Hey, I'm Joel. I'm a Chatbot developer, I make bots talk and do stuff.
+                            I was fascinated by how they worked, now I build them and I feel like
+                            a wizard! I'm also a backend developer, and I do little bit of front end.
+                            Technically, I'm a full stack dev. But I avoid using that word!
 
-                            </div>
-                        </div>
-
-                        <div id="desp-about-me">
-                            <p>Hey, I'm Joel. I'm a chatbot dev, I also develop and design webpages and webapps.
-                                When I'm bored, I hop on to YouTube and learn something or watch some funny prank.
-                                I also like to play video games. Life Time Goals : <B>BE A POLYMATH!</B>
-                            </p>
-
-                        </div>
-
-                        <div id="min-desp">
-                            <div id = "center-content">
-                                <h1>I have Expirience with...</h1>
-                            </div>
-                        </div>
-
-                        <div id = "skill-box">
-                            <div id = "stack"><p>python</p></div>
-                            <div id = "stack"><p>Flask</p></div>
-                            <div id = "stack"><p>MongoDB</p></div>
-                            <div id = "stack"><p>C++</p></div>
-                            <div id = "stack"><p>Brainfuck</p></div>
-                            <div id = "stack"><p>Javascript</p></div>
-                            <div id = "stack"><p>HTML5</p></div>
-                            <div id = "stack"><p>CSS3</p></div>
-                            <div id = "stack"><p>Incscape</p></div>
-                        </div>
-
-                        <div id="project-div">
-                            <div id = "center-content"><h1>Stuff I built</h1></div>
-
-                                <div id="project-case">
-                                    <div id="project-image">
-                                        <img src="https://i.pinimg.com/736x/91/4b/27/914b278eb0ffd3af8233306d8904ef74.jpg" width="500" height="200"/>
-                                    </div>
-                                    <h2>Senor Botto</h2>
-                                    <p>A messenger bot that helps people find taco restaurants in the US</p>
-                                    <button>view on Github</button>
-                                    <button>Try it</button>
-                                </div>
-
-                                <div id="project-case">
-                                    <div id="project-image">
-                                        <img src="https://i.pinimg.com/736x/91/4b/27/914b278eb0ffd3af8233306d8904ef74.jpg" width="500" height="200"/>
-                                    </div>
-                                    <h2>WeX - Weather Extractor Library</h2>
-                                    <p>Uses NLP to detect place mentions and weather type to give weather forecast of the place.</p>
-                                    <button>view on Github</button>
-                                    <button>Try it</button>
-                                </div>
-
-
-                        </div>
-
+                        </p>
+                    </div>
+                    <div id="social-link">
+                        <ul>
+                            <a href="https://github.com/HarowitzBlack"><li><i class="fa fa-github" aria-hidden="true"></i> Github</li></a>
+                            <a href="https://twitter.com/HarowitzBlack"><li> <i class="fa fa-twitter" aria-hidden="true"></i> Twitter</li></a>
+                        </ul>
 
                     </div>
                 </div>
+
             </div>
         </div>
-    </div>
+    </body>
+    <script>
 
-</body>
+
+    function blink() {
+       var counter = 0;
+       var f = document.getElementById('greettext');
+       setInterval(function() {
+           if(counter < 10){
+               f.style.display = (f.style.display == 'none' ? '' : 'none');
+           }
+           counter += 1;
+       }, 1000);
+    }
+
+
+
+    </script>
 </html>
