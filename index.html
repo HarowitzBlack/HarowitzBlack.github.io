@@ -5,6 +5,7 @@
         <title></title>
         <link rel="stylesheet" href="page.css">
         <script src="https://use.fontawesome.com/1b427c10f3.js"></script>
+
     </head>
     <body onload="blink()">
         <div class="wrapper">
@@ -36,23 +37,23 @@
                 </div>
 
             </div>
+
+
+            <! other container>
+            <div id="projects-container">
+                <div id="box-modal">
+                    <div id="modal-content">
+                        <div id="modal-header"></div>
+                        <div id="modal-content-body"></div>
+                        <div id="modal-footer"></div>
+
+                    </div>
+
+                </div>
+                <button id="toggle-modal">view project</button>
+            </div>
+
         </div>
     </body>
-    <script>
-
-
-    function blink() {
-       var counter = 0;
-       var f = document.getElementById('greettext');
-       setInterval(function() {
-           if(counter < 10){
-               f.style.display = (f.style.display == 'none' ? '' : 'none');
-           }
-           counter += 1;
-       }, 1000);
-    }
-
-
-
-    </script>
+    <script src="stuff.js"></script>
 </html>
