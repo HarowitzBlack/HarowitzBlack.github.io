@@ -7,6 +7,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+
+@import url('https://fonts.googleapis.com/css?family=Monofett');
+
 body{
     margin: 0px;
     background-color: #dbdde0;
@@ -17,8 +21,9 @@ body{
 h1{
     margin: 0px;
     width: auto;
-    font-family: 'Fascinate Inline', cursive;
-    font-family: 'VT323', monospace;
+    /*font-family: 'Fascinate Inline', cursive;
+    font-family: 'VT323', monospace;*/
+    font-family: 'Monofett', cursive;
     font-size: 100px;
     color: #3bcc7c;
     padding: 5px;
@@ -43,7 +48,7 @@ li{
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-p{
+#about-text{
     margin: auto;
     width: 350px;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -58,6 +63,7 @@ p{
     width: 100%;
     height: 800px;
     background-color: #141521;
+
 }
 
 #center-box{
@@ -71,6 +77,7 @@ p{
     flex-direction: row;
     border-radius: 7px;
 }
+
 
 #greeting-cont{
     width: 200px;
@@ -122,8 +129,8 @@ p{
 #projects-container{
     width: 100%;
     height: auto;
-    background-color: #231e2d;
-    background: linear-gradient(to right,#231e2d,#3e3887);
+    background-color: #fff;
+
 
 }
 
@@ -198,28 +205,42 @@ p{
 #project-box{
     transition: 0.3s;
     background-color: #fff;
-    width: 300px;
-    height: 300px;
-    border-radius: 7px;
+    width: 250px;
+    height: 350px;
+    border-radius: 0px;
     box-shadow: 0 2px 4px 0 #333;
     position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
-    margin-bottom: 30px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    transform: scale(0.9, 0.9);
 }
 
 #project-box:hover{
     transition: 0.3s;
-    transform: scale(1.1, 1.1);
+    transform: scale(1.0, 1.0);
+}
+
+#project-desp{
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin:5px;
+
 }
 
 #gradient-bg{
     width: 100%;
-    height: 180px;
-    background-color: #854845;
+    height: 220px;
+    background-color: #333;
 
+}
+
+#project-title{
+    font-family: 'Bowlby One SC', cursive;
+    margin-left: 25px;
+    color:#333;
+    font-weight: 400;
 }
 
 #toggle-modal{
@@ -245,15 +266,20 @@ p{
 }
 
 #project-center-cont{
-    margin: auto;
+    margin:auto;
     background-color: inherit;
-    width: 1000px;
+    width: 1200px;
     height: auto;
     padding-top: 200px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding-bottom: 40px;
+}
+
+#resize_img{
+    width: 100%;
+    height: 220px;
 }
 
 #footer{
@@ -263,30 +289,22 @@ p{
 }
 
 
-.bg-pink{
-    background: linear-gradient(to right,#c40f78,#c10fc4,#ef3ef2);
+#separator-left{
+    background-color: inherit;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;;
 }
 
-.bg-red{
-    background: linear-gradient(to right,#db1a1d,#d13436,#f23235);
-}
-
-
-.bg-green{
-    background: linear-gradient(to right,#3dcc92,#26e094,#19e592);
-}
-
-
-.bg-yellow{
-    background: linear-gradient(to right,#e8e81e,#e8e80b,#dbdb4a);
-}
-
-
-.bg-blue{
-    background: linear-gradient(to right,#4275bc,#3673c9,#1767d8);
-}
-
-
-.bg-purple{
-    background: linear-gradient(to right,#c40f78,#c10fc4,#ef3ef2);
+#separator-right{
+    width: 250px;
+    height: 600px;
+    background-color: #f9f9f9;
+    margin-top:15px;
+    margin-left: 25px;
+    box-shadow: 0px 2px 4px #333;
+    background-image: url("https://i.pinimg.com/736x/8d/29/6a/8d296a89b4f1e9a2087eee37f3d0106f--space-illustration-night-stars.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
