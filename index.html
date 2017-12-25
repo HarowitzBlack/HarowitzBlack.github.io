@@ -7,15 +7,23 @@
     <script src="jquery-3.2.1.min.js"></script>
     <style media="screen" type="text/css">
 
+      html{
+          margin: 0px;
+
+      }
 
       body{
         margin: 0px;
-        background-color: #3d1151;
+        background-color: #05ff96;
         width: 100%;
         height: 100%;
         overflow: hidden;
         display: flex;
         flex-direction: column;
+      }
+
+      .frame{
+          margin: 0px;
       }
 
       .box{
@@ -36,7 +44,7 @@
         box-shadow: 1px 2px 4px #0a042d;
         transition: 0.1s;
         overflow: hidden;
-        animation: pulse infinite 2s;
+        /*animation: pulse infinite 2s;*/
       }
 
     /*  .floating_ball:active{
@@ -89,17 +97,37 @@
 
       }
 
+      .notif_text{
+        text-align: center;
+        font-family: 'Laksaman';
+        font-weight: 900;
+        color:#fff;
+        position: relative;
+        top:250px;
+      }
+
+      .space{
+        margin: 0px auto;
+        width: 100%;
+        height: 800px;
+        background-color: #215;
+        display: none;
+      }
+
     </style>
   </head>
   <body>
     <div class="frame">
       <div class="box c1">
+        <div class="space">
+        </div>
         <div class= "floating_ball center_ball" id="heart_box">
           <div class="inside-img">
             <img src="heart.png" class="heart-img">
           </div>
-
         </div>
+
+        <p class="notif_text"></p>
       </div>
     </div>
   </body>
@@ -107,10 +135,27 @@
 <script>
   $(document).ready(function(){
 
-    $("#heart_box").click(function(){
-          console.log("heart clicked!");
-          $("#heart_box").animate({left: '500px',display:'hidden'});
-      });
+    var heart_pulse_count = 0;
+    $(".inside-img").click(function(){
+        // create a pulse effect
+          heart_pulse_count += 1
+          console.log("Button click ",heart_pulse_count)
+          $('#heart_box').css({'transform':"scale(0.9,0.9)"});
+          setTimeout(function(){
+              $('#heart_box').css({'transform':"scale(1,1)"});
+          },100);
+
+          if(heart_pulse_count % 10 == 0){
+            $('#heart_box').fadeOut();
+            $('.space').slideDown(300);
+
+          }
+
+    });
+
+    $("#system-btn").click(function(){
+      $("#system-btn").css({'left':'200px'});
+    })
 
   })
 
