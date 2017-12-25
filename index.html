@@ -1,121 +1,119 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="jquery-3.2.1.min.js"></script>
     <style media="screen" type="text/css">
 
-    @import url('https://fonts.googleapis.com/css?family=Squada+One');
 
-    body{
-      margin: 0px auto;
-      background-color: #ffffff;
-      width: 100%;
-      height: 100%;
-      overflow-x: hidden;
-    }
+      body{
+        margin: 0px;
+        background-color: #3d1151;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
 
-    #center_wrapper{
-      margin: 0px auto;
-      width: 100%;
-      height: 800px;
-      background-color: inherit;
-      display: flex;
-    }
+      .box{
+        width: 100%;
+        height: 800px;
 
-    #highlight_text_container{
-      margin: 0px auto;
-      width: 500px;
-      height: 650px;
-      background-color: #fff;
-      position: relative;
-      padding: 10px;
-      float: left;
-    }
+      }
 
-    #highlight_text{
-      margin: 0px;
-      font-family: 'Squada One', cursive;
-      color:#000;
-      font-size: 80px;
-      font-weight: bolder;
-      position: relative;
-      top:100px;
-    }
+      .c1{
+        background-color: #05ff96;
+      }
 
-    #highlight_img_container{
-        width: 800px;
-        height: 650px;
-        background-color: #000;
-        padding: 10px;
-        background-image: url("http://blog.newyorkpass.com/wp-content/uploads/2017/11/nyc-aerial-skyline.jpg");
-        background-size: cover;
-    }
+      .floating_ball{
+        width: 100px;
+        height: 100px;
+        background-color: #eff0f2;
+        border-radius: 100%;
+        box-shadow: 1px 2px 4px #0a042d;
+        transition: 0.1s;
+        overflow: hidden;
+        animation: pulse infinite 2s;
+      }
 
-    #aboutme_section{
-      width: 500px;
-      height: 300px;
-      background-color: #fff;
-    }
+    /*  .floating_ball:active{
+        border-radius: 100%;
+        transform: scale(0.9,0.9);
+        transition: 0.1s;
 
-    #display_picture{
-      width: 100px;
-      height: 100px;
-      border: 1px solid #000;
-      overflow: hidden;
-      background-image: url("https://fsa.zobj.net/crop.php?r=-HOYZTAD3HdzJRw59rlJgl1w_wIbS9FbR2X07wqTX32QtyWxqly6VUIH11nF8IPtzJ0MYuB393pYypyXp2vw2M_Xjuo33vuft6LhJZmLkQD3TcV7dfmF-Frc_kvciSmAxObeEQfSg_bu6AE-H17xdClr9ubL4uHQz8MrUw");
-      background-position: top center;
-      border-radius: 100%;
-    }
+      }*/
 
-    #nav_section{
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: row;
+      .inside-img{
+        width: 80px;
+        height: 80px;
+        margin:0px auto;
+        background-color: #eff0f2;
+        border-radius: 100%;
+        overflow: hidden;
+        position: relative;
+        top:8px;
+      }
 
-    }
+      .heart-img{
+        margin: 0px auto;
+        position: relative;
+        left:7px;
+        top:12px;
+      }
 
-    #nav_items{
-      padding: 10px;
-      font-size: 18px;
-      font-family: 'Squada One', cursive;
-      color:#fff;
-      background-color: #000;
-      cursor: pointer;
+      .center_ball{
+        margin: 0px auto;
+        position: relative;
+        top:250px;
+      }
 
-    }
+      @keyframes pulse {
+
+        0% {
+          transform: scale(1,1);
+          transition: 0.1s;
+        }
+
+        50% {
+              transform: scale(0.9,0.9);
+              transition: 0.1s;
+        }
+
+        100% {
+              transform: scale(1,1);
+              transition: 0.1s;
+        }
+
+      }
 
     </style>
   </head>
   <body>
-    <div id="center_wrapper">
-
-      <div id="highlight_text_container">
-        <p id="highlight_text">YOU GET SOMEWHERE BY FIRST GIVING, THEN GETTING.</p>
-      </div>
-
-      <div id="highlight_img_container">
-        <div id="aboutme_section">
-          <div id="display_picture"></div>
-          <div id="nav_section">
-            <p id="nav_items">BLOG</p>
-            <p id="nav_items">PROJECTS</p>
-            <p id="nav_items">GITHUB</p>
-            <p id="nav_items">TWITTER</p>
-
-
-
+    <div class="frame">
+      <div class="box c1">
+        <div class= "floating_ball center_ball" id="heart_box">
+          <div class="inside-img">
+            <img src="heart.png" class="heart-img">
           </div>
 
         </div>
-
       </div>
-
-
-
-
     </div>
-
   </body>
+
+<script>
+  $(document).ready(function(){
+
+    $("#heart_box").click(function(){
+          console.log("heart clicked!");
+          $("#heart_box").animate({left: '500px',display:'hidden'});
+      });
+
+  })
+
+</script>
+
 </html>
