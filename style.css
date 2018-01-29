@@ -1,0 +1,185 @@
+
+ @import url('https://fonts.googleapis.com/css?family=Poiret+One');
+ @import url('https://fonts.googleapis.com/css?family=Happy+Monkey|Poiret+One');
+
+body{
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding: 0px;
+}
+
+.container{
+  width: 100%;
+  height: inherit;
+  margin: 0px auto;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.section_main{
+  width: 1100px;
+  height: auto;
+  padding: 0px;
+  margin: 0px auto;
+  background-color: #562;
+  position: relative;
+  top:50px;
+}
+
+.inner_section{
+  width: 100%;
+  height: 500px;
+  background-color: #fff;
+  margin: 0px auto;
+}
+
+.welcome_text{
+  width: 800px;
+  font-size: 60px;
+  font-weight: 600;
+  color:#000;
+  text-align: center;
+  background-color: inherit;
+  margin: 0px auto;
+  position: relative;
+  top:100px;
+  padding: 20px;
+  font-family: 'Poiret One', cursive;
+}
+
+.short_bio{
+  font-size: 20px;
+  font-family: 'Poiret One', cursive;
+  color:#777;
+  position: relative;
+  top:50px;
+  text-align: center;
+  padding: 25px;
+
+}
+
+
+.nav_bar{
+  margin: 0px auto;
+  margin-left: -10px;
+  padding: 5px;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  box-shadow: 1px 2px 2px #ccc;
+}
+
+.view_projects{
+  margin-top: 5px;
+  transition: 0.2s ease-in;
+  width: 150px;
+  height:60px;
+  padding: 15px;
+  color:#fff;
+  background-color: #000;
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 7px;
+  box-shadow: 2px 2px 3px #aaa;
+  position: relative;
+  top:50px;
+  left:450px;
+  border: none;
+}
+
+.view_projects:hover{
+
+  background-color: #6735ff;
+  transition: 0.2s ease-out;
+}
+
+.skills_area{
+  width: 500px;
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+  top:100px;
+  left:250px;
+  margin-right: 5px;
+}
+
+.tech{
+  width: auto;
+  height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  color:#6735ff;
+  border-radius: 7px;
+  text-align: center;
+  position: relative;
+  margin-right: 5px;
+}
+
+.skill-info{
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+  position: relative;
+  top:80px;
+  left:380px;
+
+}
+
+.social_links{
+  width: 500px;
+  height: 100px;
+  background-color: inherit;
+  position: relative;
+  top:100px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.github_icon{
+  width: 30px;
+  height: 30px;
+  background-color: inherit;
+  margin: 5px;
+  background-image: url('icons/github-logo.png');
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.twitter_icon{
+  width: 30px;
+  height: 30px;
+  background-color: inherit;
+  margin: 5px;
+  background-image: url('icons/twitter-logo-silhouette.png');
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.facebook_icon{
+  width: 30px;
+  height: 30px;
+  background-color: inherit;
+  margin: 5px;
+  background-image: url('icons/facebook-logo.svg');
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.icon-center{
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+}
