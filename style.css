@@ -1,6 +1,7 @@
 
  @import url('https://fonts.googleapis.com/css?family=Poiret+One');
  @import url('https://fonts.googleapis.com/css?family=Happy+Monkey|Poiret+One');
+ @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
 body{
   width: 100%;
@@ -52,13 +53,15 @@ body{
 }
 
 .short_bio{
+  margin: 0px auto;
+  width: 360px;
   font-size: 20px;
   font-family: 'Poiret One', cursive;
   color:#fff;
   position: relative;
   top:50px;
   text-align: center;
-  padding: 25px;
+  padding: 50px;
 
 }
 
@@ -136,4 +139,34 @@ body{
   position: absolute;
   bottom: 10px;
   left:-10px;
+}
+
+a{
+  text-decoration: none;
+
+}
+
+.crapps_btn{
+  margin: 0px auto;
+  width: 200px;
+  height: 70px;
+  position: relative;
+  background-color: #22d8a8;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px #111;
+  top:-40px;
+  left:-10px;
+  cursor: pointer;
+
+
+}
+
+.crapps_txt{
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  position: relative;
+  top:20px;
+  color:#000;
+  text-decoration-color: #000;
+  text-decoration-line: underline;
 }
