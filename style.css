@@ -5,7 +5,7 @@
 body{
   width: 100%;
   height: auto;
-  background-color: #fff;
+  background-color: #000;
   overflow: hidden;
   padding: 0px;
 }
@@ -25,7 +25,7 @@ body{
   height: auto;
   padding: 0px;
   margin: 0px auto;
-  background-color: #562;
+  background-color: inherit;
   position: relative;
   top:50px;
 }
@@ -33,7 +33,7 @@ body{
 .inner_section{
   width: 100%;
   height: 500px;
-  background-color: #fff;
+  background-color: inherit;
   margin: 0px auto;
 }
 
@@ -41,7 +41,7 @@ body{
   width: 800px;
   font-size: 60px;
   font-weight: 600;
-  color:#000;
+  color:#fff;
   text-align: center;
   background-color: inherit;
   margin: 0px auto;
@@ -54,7 +54,7 @@ body{
 .short_bio{
   font-size: 20px;
   font-family: 'Poiret One', cursive;
-  color:#777;
+  color:#fff;
   position: relative;
   top:50px;
   text-align: center;
@@ -75,111 +75,65 @@ body{
   box-shadow: 1px 2px 2px #ccc;
 }
 
-.view_projects{
-  margin-top: 5px;
+.icon_btn_container{
+  width: 300px;
+  height: 90px;
+  background-color: inherit;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left:35%;
+  top:30px;
+}
+
+.nice_button{
+  margin: 0px auto;
   transition: 0.2s ease-in;
-  width: 150px;
-  height:60px;
+  width: 40px;
+  height:40px;
   padding: 15px;
-  color:#fff;
-  background-color: #000;
+  color:#000;
+  background-color: #fff;
   font-family: 'Poiret One', cursive;
   text-align: center;
   cursor: pointer;
-  border-radius: 7px;
-  box-shadow: 2px 2px 3px #aaa;
+  border-radius: 100%;
   position: relative;
-  top:50px;
-  left:450px;
   border: none;
 }
 
-.view_projects:hover{
+.nice_button:hover{
 
-  background-color: #6735ff;
   transition: 0.2s ease-out;
 }
 
-.skills_area{
-  width: 500px;
-  height: 40px;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  font-family: 'Poiret One', cursive;
-  font-size: 20px;
-  top:100px;
-  left:250px;
-  margin-right: 5px;
+.purp:hover{
+  background-color: #6735ff;
 }
 
-.tech{
-  width: auto;
-  height: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-  cursor: pointer;
-  background-color: #f9f9f9;
-  color:#6735ff;
-  border-radius: 7px;
-  text-align: center;
-  position: relative;
-  margin-right: 5px;
+.red:hover{
+  background-color: #f44242;
 }
 
-.skill-info{
-  font-family: 'Poiret One', cursive;
-  font-size: 20px;
-  position: relative;
-  top:80px;
-  left:380px;
-
+.yellow:hover{
+  background-color: #f4f141;
 }
 
-.social_links{
-  width: 500px;
-  height: 100px;
-  background-color: inherit;
-  position: relative;
-  top:100px;
-  margin: 0px auto;
-  display: flex;
-  flex-direction: row;
+.green:hover{
+  background-color: #41f49d;
 }
 
-.github_icon{
-  width: 30px;
-  height: 30px;
-  background-color: inherit;
-  margin: 5px;
-  background-image: url('icons/github-logo.png');
+.large{
+  margin-top: 4px;
+  font-size: 30px;
+}
+
+.yoda-img{
+  width: 400px;
+  height: 400px;
+  background-image: url("http://s3.amazonaws.com/cdn.roosterteeth.com/uploads/images/3a49fa7f-ef34-4d51-958f-6b4908641e91/md/Hibbleton1015010ea1b7635c.jpg");
   background-size: 100%;
-  cursor: pointer;
-}
-
-.twitter_icon{
-  width: 30px;
-  height: 30px;
-  background-color: inherit;
-  margin: 5px;
-  background-image: url('icons/twitter-logo-silhouette.png');
-  background-size: 100%;
-  cursor: pointer;
-}
-
-.facebook_icon{
-  width: 30px;
-  height: 30px;
-  background-color: inherit;
-  margin: 5px;
-  background-image: url('icons/facebook-logo.svg');
-  background-size: 100%;
-  cursor: pointer;
-}
-
-.icon-center{
-  margin: 0px auto;
-  display: flex;
-  flex-direction: row;
+  position: absolute;
+  bottom: 10px;
+  left:-10px;
 }
