@@ -4,19 +4,23 @@
     <meta charset="utf-8">
     <title>hblack | PROJECTS</title>
     <link rel="stylesheet" href="projects.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   </head>
   <body>
 
+    <h1 id="pcounter"></h1>
     <div class="poster">
     </div>
 
     <div class="view_box">
+      <div id="bg_header_poster">
+        <p id="title_text"></p>
+      </div>
 
-      <p id="title_text"></p>
       <p id="project_desp"></p>
-      <a href="#" id="project_url">take me there</a>
-      <button type="button" name="button" id="bwd_btn" onclick="move_back()">back</button>
-      <button type="button" name="button" id="fwd_btn" onclick="move_forward()">next</button>
+      <a href="#" id="project_url"><i class="fas fa-search"></i> see project</a>
+      <button type="button" name="button" id="bwd_btn" onclick="move_back()"><i class="fas fa-step-backward"></i></button>
+      <button type="button" name="button" id="fwd_btn" onclick="move_forward()"><i class="fas fa-step-forward"></i></button>
 
     </div>
     <script type="text/javascript" src="project_viewer.js"></script>
