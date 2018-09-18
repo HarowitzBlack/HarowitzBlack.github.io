@@ -1,0 +1,14 @@
+body {
+  background: black;
+  background: -moz-radial-gradient(circle, black 0%, #020202 31%, #040404 59%, #0a0a0a 75%, #0b0b0b 89%, #121212 100%);
+  background: -webkit-radial-gradient(circle, black 0%, #020202 31%, #040404 59%, #0a0a0a 75%, #0b0b0b 89%, #121212 100%);
+  background: radial-gradient(circle, black 0%, #020202 31%, #040404 59%, #0a0a0a 75%, #0b0b0b 89%, #121212 100%); }
+
+.fixed {
+  position: fixed; }
+
+.bottom {
+  top: 80vh;
+  left: 80px; }
+
+/*# sourceMappingURL=styles.css.map */
