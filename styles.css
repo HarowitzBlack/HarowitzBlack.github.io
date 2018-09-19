@@ -1,4 +1,5 @@
 body {
+  margin: 0px auto;
   background: black;
   background: -moz-radial-gradient(circle, black 0%, #020202 31%, #040404 59%, #0a0a0a 75%, #0b0b0b 89%, #121212 100%);
   background: -webkit-radial-gradient(circle, black 0%, #020202 31%, #040404 59%, #0a0a0a 75%, #0b0b0b 89%, #121212 100%);
@@ -10,5 +11,54 @@ body {
 .bottom {
   top: 80vh;
   left: 80px; }
+
+.grey {
+  background-color: #252526; }
+
+.red {
+  background-color: #fff;
+  opacity: 0.3; }
+
+section #container-main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100vh; }
+  section #container-main #sidebar-col {
+    grid-column: 1; }
+  section #container-main #about-col {
+    grid-column: 2/5; }
+
+#about-col {
+  display: grid;
+  grid-template-columns: 1fr 600px 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 3px; }
+  #about-col #about-text-section {
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 100px 1fr 50px;
+    grid-gap: 4px; }
+    #about-col #about-text-section #about-greetings-msg {
+      font-size: 30px;
+      color: #fff;
+      font-family: sans-serif; }
+    #about-col #about-text-section #about-desc-text {
+      min-width: 400px;
+      font-size: 13px;
+      color: #888;
+      font-family: sans-serif;
+      line-height: 25px; }
+      #about-col #about-text-section #about-desc-text p {
+        width: 580px; }
+    #about-col #about-text-section #about-section-links {
+      padding: 15px 0;
+      display: grid;
+      grid-template-columns: repeat(5, 60px);
+      grid-template-rows: 50px;
+      grid-gap: 2px; }
 
 /*# sourceMappingURL=styles.css.map */
