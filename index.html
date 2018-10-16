@@ -5,60 +5,78 @@
     <meta charset="utf-8">
     <title>Harowitz Black</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   </head>
-  <section>
-    <div id="container-main">
-      <div id="sidebar-col"></div>
-      <div id="about-col">
-        <div id="about-text-section">
-          <div id="about-greetings-msg">
-            <h1>hello I'm Ben</h1>
-          </div>
-          <div id="about-desc-text">
-            <p>
-              I'm a Web Developer and an Interface designer. I design and craft beautiful UI
-              for the web. Atleast that's what I tell people (that's you mate). I mostly create
-              web apps (for myself,lol) and design a shit-ton of UI components (also for myself).
-            </p>
 
-            <p>
-               I'm very fascinated by how things are built and how they influence our minds. That's
-               why I'm on a life long adventure of learning new things.
-            </p>
-            <p>
-              At present, I work at a small media company as an "I don't have a title". I wear a few hats there.
-            </p>
-          </div>
-          <div id="about-section-links">
-            <div id="soc-twitter">
-              <a href="https://twitter.com/HarowitzBlack">
-                <object type="image/svg+xml" data="assets/twitter.svg" width="20" height="20"></object>
-              </a>
-            </div>
-            <div id="soc-dribbble">
-              <a href="https://dribbble.com/HarowitzBlack">
-                <object type="image/svg+xml" data="assets/dribbble.svg" width="20" height="20"></object>
-              </a>
-            </div>
-            <div id="soc-github">
-              <a href="https://github.com/HarowitzBlack">
-                <object type="image/svg+xml" data="assets/github.svg" width="20" height="20"></object>
-              </a>
-            </div>
-            <div id="soc-instagram">
-              <a href="https://www.instagram.com/therealben9/">
-                <object type="image/svg+xml" data="assets/instagram.svg" width="20" height="20"></object>
-              </a>
-            </div>
-          </div>
-        </div>
+  <aside id="nav_bar" class="fixed top right">
+
+    <p id="show-work-btn" class="btn-ghost">My Work <i class="fas fa-arrow-right"></i> </p>
+
+  </aside>
+
+  <aside id="work-container" class="">
+
+  </aside>
+
+  <section class="flex-center-items">
+
+    <div class="flex-center-items" id="blob-container">
+      <div class="blob flex-center-items gr-purp">
+
       </div>
     </div>
+
+    <div class="flex-justify" id="content-section">
+
+      <hgroup>
+        <h1 class="headding">Hello, I'm Ben!</h1>
+        <p>
+          I'm a Web Developer and an Interface designer. I design and craft beautiful UI
+          for the web. Atleast that's what I tell people (that's you mate). I'm the
+          creator of <a class="link" href="https://noshit.xyz">noShit.xyz</a> and <a class="link" href="https://thembutton.xyz">thembutton.xyz</a>
+        </p>
+
+        <p>
+           I'm very fascinated by how things are built and how they influence our minds. That's
+           why I'm on a life long adventure of learning new things.
+        </p>
+        <p>
+          At present, I work at a small media company where I'm re-designing our
+          news website and I wear a few hats too.
+        </p>
+      </hgroup>
+
+      <div class="flex-center-item" id="social-section">
+        <a href="https://twitter.com/HarowitzBlack" target="_blank"> <i class="fab fa-twitter"></i> </a>
+        <a href="https://dribbble.com/HarowitzBlack" target="_blank"> <i class="fab fa-github"></i> </a>
+        <a href="https://github.com/HarowitzBlack" target="_blank"> <i class="fab fa-dribbble"></i> </a>
+      </div>
+
+    </div>
+
+
+
   </section>
-  <aside class="fixed bottom">
-    <button type="button" id="xLikebtn" data-uid="61b62b9dfa"></button>
-  </aside>
-  <!--script src="http://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script-->
-  <script src="https://testthembuttons.herokuapp.com/static/dist/mkbtn009.js" async defer></script>
+  <script src="http://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
+  <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+
+  <script>
+  let showWorkCta = $("#show-work-btn");
+  let WorkOverlay = $('#work-container');
+
+  WorkOverlay.hide(0);
+
+  showWorkCta.click(function(event){
+    WorkOverlay.css({"display":"flex"})
+    WorkOverlay.slideDown(400)
+  })
+
+
+
+  </script>
+
   </body>
 </html>
