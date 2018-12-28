@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="">
+
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="">
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="https://harowitzblack.github.io/cat.png">
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@harowitzblack" />
+    <meta property="og:url" content="https://harowitzblack.github.io/" />
+    <meta property="og:title" content="Hey, I’m Ben! I’m a Developer and an Interfacer Designer." />
+    <meta property="og:description" content="Welcome to my part of the Internet." />
+    <meta property="og:image" content="https://harowitzblack.github.io/cat.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Hey, I'm Ben!</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+
+  </head>
+  <body>
+
+    <main>
+      <nav class="flex-row right">
+
+        <ul class="flex-row">
+          <li class="posh">
+            <a href="#projectContainer" class="posh">Work</a>
+          </li>
+          <li class="posh">
+            <a href="#contactContainer" class="posh">Contact</a>
+          </li>
+        </ul>
+
+      </nav>
+      <section id="mainContainer" class="flex-row center">
+
+        <div id="innerContainer" class="flex-col">
+          <h1 class="jumbo flex-col center">Hey, I’m Ben! I’m a Developer and an Interfacer Designer.</h1>
+          <p class="despText">
+            Welcome to my part of the Internet. Hello, I’m Joel Benjamin but people on the internet call me Ben.
+            And yes, I have two first names. I’m the creator of interfacer and stomp and a bunch of other things.
+          </p>
+        </div>
+
+        <div id="innerContainer" class="flex-row">
+          <div class="box1">
+          </div>
+        </div>
+      </section>
+
+      <section id="projectContainer" class="flex-row">
+        <div id="innerContainer" class="flex-col">
+          <p class="jumbo2">Things I built that will probably not change the World.</p>
+          <p class="subTitle">My Work — Things I built in my free time</p>
+          <a href="https://interfacer.xyz" target="_blank"><p class="projectName">interfacer</p></a>
+          <a href="https://stompapp.xyz" target="_blank"><p class="projectName">Stomp</p></a>
+          <a href="https://gifkitty.xyz" target="_blank"><p class="projectName">Gifkitty</p></a>
+          <a href="https://github.com/HarowitzBlack/kemosabe" target="_blank"><p class="projectName">Kemosabe</p></a>
+        </div>
+
+        <div id="proContainer"></div>
+
+      </section>
+
+      <section id="contactContainer" class="flex-row center">
+
+          <div id="ConactImgContainer">
+
+          </div>
+
+          <div id="ConactInnerContainer">
+              <p class="jumbo">The Social Stuff</p>
+              <p class="subTitle">
+                 I mostly hangout on twitter, so it would be really cool if
+                 you reached out to me there.
+              </p>
+              <ul>
+                <li>
+                  <a href="https://twitter.com/harowitzblack" class="social" target="_blank">Twitter</a>
+                </li>
+                <li>
+                  <a href="https://github.com/harowitzblack" class="social" target="_blank">Github</a>
+                </li>
+
+                <li>
+                  <a href="https://dribbble.com/harowitzblack" class="social" target="_blank">Dribbble</a>
+                </li>
+
+                <li>
+                  <a href="mailto:joelbenjamin093@gmail.com" class="social" target="_blank">Email</a>
+                </li>
+              </ul>
+          </div>
+
+      </section>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <script src="oridomi.min.js"></script>
+
+    <script type="text/javascript">
+
+    var folded = new OriDomi(".box1",{
+      // vPanels:          5,     // number of panels when folding left or right (vertically oriented)
+      hPanels:          12,     // number of panels when folding top or bottom
+      speed:            800,  // folding duration in ms
+      ripple:           2,     // backwards ripple effect when animating
+      shadingIntensity: .5,    // lessen the shading effect
+      perspective:      800,   // smaller values exaggerate 3D distortion
+      maxAngle:         40,    // keep the user's folds within a range of -40 to 40 degrees
+      shading:          'soft'
+    });
+
+    folded.accordion(30);
+
+    var folded1 = new OriDomi("#proContainer",{
+      // vPanels:          5,     // number of panels when folding left or right (vertically oriented)
+      hPanels:          12,     // number of panels when folding top or bottom
+      speed:            800,  // folding duration in ms
+      ripple:           2,     // backwards ripple effect when animating
+      shadingIntensity: .5,    // lessen the shading effect
+      perspective:      800,   // smaller values exaggerate 3D distortion
+      maxAngle:         40,    // keep the user's folds within a range of -40 to 40 degrees
+      shading:          'soft'
+    });
+
+    folded1.accordion(20);
+
+    var folded2 = new OriDomi("#ConactImgContainer",{
+      // vPanels:          5,     // number of panels when folding left or right (vertically oriented)
+      hPanels:          12,     // number of panels when folding top or bottom
+      speed:            800,  // folding duration in ms
+      ripple:           2,     // backwards ripple effect when animating
+      shadingIntensity: .5,    // lessen the shading effect
+      perspective:      800,   // smaller values exaggerate 3D distortion
+      maxAngle:         40,    // keep the user's folds within a range of -40 to 40 degrees
+      shading:          'soft'
+    });
+
+    folded2.accordion(60);
+
+
+
+
+
+    // $('.projectBox').slick();
+
+    </script>
+
+  </body>
+</html>
